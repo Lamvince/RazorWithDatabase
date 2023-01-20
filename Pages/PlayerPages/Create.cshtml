@@ -33,6 +33,11 @@
                 <select asp-for="Player.TeamName" class ="form-control" asp-items="ViewBag.TeamName"></select>
             </div>
             <div class="form-group">
+                <label asp-for="Player.Salary" class="control-label"></label>
+                <input asp-for="Player.Salary" class="form-control" />
+                <span asp-validation-for="Player.Salary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
